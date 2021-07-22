@@ -112,15 +112,23 @@ whatMinutes(17);
 
 //Задать начальное значение возраста в переменную age и проверить, является ли пользователь совершеннолетним или нет, выводя соответствующие сообщения
 
-/*
-const age = 55;
+/*const age = 55;
 if(age < 18){
     console.log('Несовершеннолетний')
 }
 else{
     console.log('Совершеннолетний')
-}
-*/
+}*/
+
+let age = 18;
+let whatAge = (age <= 18) ?
+
+    () => console.log('Несовершеннолетний'):
+    () => console.log('Совершеннолетний');
+
+whatAge();
+
+/*
 function ask(question, yes, no) {
     if (confirm(question)) yes()
     else no();
@@ -131,4 +139,4 @@ ask(
     () => alert("Вы согласились."),
     () => alert("Вы отменили выполнение.")
 );
-console.log(ask(11));
+console.log(ask(11));*/
