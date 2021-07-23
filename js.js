@@ -41,19 +41,6 @@ else {
     console.log('Кого ты хочешь обмануть?')
 }*/
 
-/*function map(f, a) {
-    var result = []; // Create a new Array
-    var i; // Declare variable
-    for (i = 0; i != a.length; i++)
-        result[i] = f(a[i]);
-    return result;
-}
-var f = function(x) {
-    return x * x * x;
-}
-var numbers = [0, 1, 2, 5, 10];
-var cube = map(f,numbers);
-console.log(cube);*/
 
 let checkMounth = function (mounth) {
     if (mounth <= 2 && mounth >= 1 || mounth === 12) {
@@ -69,6 +56,7 @@ let checkMounth = function (mounth) {
     }
 };
 checkMounth(1);
+
 //В переменной min лежит число от 0 до 59. Определите в какую четверть часа попадает это число (в первую, вторую, третью или четвертую).
 /*
 
@@ -120,28 +108,9 @@ let whatAge = (age <= 18) ?
 
 whatAge();
 
-/*
-function ask(question, yes, no) {
-    if (confirm(question)) yes()
-    else no();
-}
 
-ask(
-    "Вы согласны?",
-    () => alert("Вы согласились."),
-    () => alert("Вы отменили выполнение.")
-);
-console.log(ask(11));*/
-
-/*Roman Препод, [22.07.21 10:47]
-С помощью цикла найдите сумму чисел от 1 до 100.
-
-Roman Препод, [22.07.21 10:47]
-Тремя циклами, for, while, do while*/
-
-
-let sum = 100;
-let i = 0;
+let sum = 0;
+let shkot = 0;
 
 for (i = 1; i <= 100; i++) {
     sum += i;
@@ -149,23 +118,31 @@ for (i = 1; i <= 100; i++) {
 console.log(sum);
 
 
-while (sum <= 100) {
-
+while (shkot <= 100) {
+   sum += shkot++;
 }
+console.log(sum);
 
 
+do{
+    sum += shkot++;
+}while(shkot <= 100);
+console.log(sum);
 
+/*Бонус*/
+const func = (start, end) => {
+    let getIteration = start;
+    let getSum = 1;
+    while (getIteration < end) {
+        getIteration ++;
+        if (getIteration % 2 === 0) {
+            getSum *= getIteration
+        }
+    }
+    return getSum;
+};
 
-
-
-
-
-
-
-
-
-
-
+console.log(func(14, 24));
 
 
 
