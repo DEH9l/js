@@ -64,6 +64,7 @@ const CONTAINER = document.querySelector('.container');
 CLOSE_BTN.addEventListener('click',function () {
     CLOSE_BTN.classList.toggle('d-none');
     CONTAINER.classList.toggle('d-flex');
+
 });
 ADD_BUTTON.addEventListener('click',function () {
     CLOSE_BTN.classList.toggle('d-none');

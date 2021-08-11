@@ -3,26 +3,37 @@
     justify-content: center;
     align-items: flex-end;
     flex-direction: column;
-    background-color: red;
-    width: 320px;
+    background-color: grey;
+    width: 100vw;
+    height: 100%;
     margin: auto;
-    padding-bottom: 15px;
+    position: absolute;
+    font-size: 2rem;
+    text-align: center;
 }
 
-.form {
+.container .form {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    border: 0.5rem dotted black;
     margin: auto;
+    opacity: 100%;
+}
+.form__inner{
+    margin: 15px;
 }
 
 .form input {
     padding: 5px;
-    width: 300px;
+    width: 320px;
+    border-radius: 20px;
+    font-size: 1rem;
 }
-
 button {
     margin-top: 10px;
+    font-size: 2rem;
+    border-radius: 20px;
 }
 
 #beerContainer {
@@ -32,10 +43,17 @@ button {
 }
 
 .close-btn{
-    width: 20px;
-    height: 20px;
     margin: auto;
-    background-color: aqua;
+    text-align: center;
+}
+.close-btn p{
+    font-size: 1.5rem;
+    display: inline-block;
+    border: 1px solid blue;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-style: italic;
+    padding: 15px;
 }
 .d-none{
     display: none;
